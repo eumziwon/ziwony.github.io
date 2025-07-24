@@ -17,7 +17,12 @@ const Diary = () => {
             text={"< 뒤로가기"}
           />
         }
-        rightChild={<Button text={"수정하기"} />}
+        rightChild={
+          <Button
+            onClick={() => nav(`/edit/${params.id}`)}
+            text={"수정하기"}
+          />
+        }
       />
       <Viewer />
     </div>
